@@ -46,34 +46,35 @@ Persistence | 0.361 |
 
 ### Project Description
 
-```python
-
-```
-
 There are majoly two part in our work.
 
 - LightGBM used for regression analysis
 
 This part is full described in the model section
 
-```python
+- LSTM regression for 48h ahead
 
-```
-
-- LSTM regression
+#### LightGBM wind power regression
 
 
 #### Hyprid LSTM Model for Wind Power Prediction
-After K-means Processing 
+
+##### K-means Processing 
+
+
+##### Feature Engineering
 
 ```python
     Net_model = NN_Net(params, x_train)
     scores = Net_model.train(x_train, y_train, x_test, y_test, 'wsPower2', load_models=False)
 ```
 
+#### Phsyical Constrains 
+
+
 ### Reference
 1.	[Mangalova E, Agafonov E. Wind power forecasting using the k-nearest neighbors algorithm. INT J FORECASTING. 2014;30:402-406](https://www.sciencedirect.com/science/article/abs/pii/S0169207013000848).
-2.	[Silva L. A feature engineering approach to wind power forecasting: GEFCom 2012. INT J FORECASTING. 2014;30:395-401]((https://www.sciencedirect.com/science/article/abs/pii/S0169207013000836)).
+2.	[Silva L. A feature engineering approach to wind power forecasting: GEFCom 2012. INT J FORECASTING. 2014;30:395-401](https://www.sciencedirect.com/science/article/abs/pii/S0169207013000836).
 3.	[Fang S, Chiang H. A high-accuracy wind power forecasting model. IEEE T POWER SYST. 2016;32:1589-1590](https://ieeexplore.ieee.org/abstract/document/7497013).
 4.	[Wytock M, Kolter JZ, "Large-scale probabilistic forecasting in energy systems using sparse gaussian conditional random fields," in 52nd IEEE Conference on Decision and Control, (IEEE, 2013), pp. 1019-1024](https://ieeexplore.ieee.org/abstract/document/6760016/).
 5.	[Li G, Chiang H. Toward cost-oriented forecasting of wind power generation. IEEE T SMART GRID. 2016;9:2508-2517](https://ieeexplore.ieee.org/abstract/document/7579134/).
