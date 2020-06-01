@@ -34,14 +34,14 @@ state of the Art work
 
 Methods | 48H ahead 
 :-: | :-: 
-ALL-CF | 0.14564 | 
-GBM + K-Means + LR | 0.14567 |
-KNN | 0.1472 |
-SGCRF | 0.1488 |
-LSBRT | 0.1518 | 
-SDAE-m-m | 0.154 | 
-S-GP-ENV  | 0.1604| 
-GP + NN | 0.1752 |
+[ALL-CF](https://ieeexplore.ieee.org/abstract/document/7497013) [3]| 0.14564 | 
+[GBM + K-Means + LR](https://www.sciencedirect.com/science/article/abs/pii/S0169207013000836) [2] | 0.14567 |
+[KNN](https://www.sciencedirect.com/science/article/abs/pii/S0169207013000848) [1] | 0.1472 |
+[SGCRF](https://ieeexplore.ieee.org/abstract/document/6760016/) [4] | 0.1488 |
+[LSBRT](https://ieeexplore.ieee.org/abstract/document/7579134/) [5] | 0.1518 | 
+[SDAE-m-m](https://ieeexplore.ieee.org/abstract/document/8240639) [6] | 0.154 | 
+[S-GP-ENV](https://ieeexplore.ieee.org/abstract/document/7812215) [7] | 0.1604| 
+[GP + NN](https://ieeexplore.ieee.org/abstract/document/6606922/)[8] | 0.1752 |
 Persistence | 0.361 | 
 
 ### Project Description
@@ -70,3 +70,15 @@ After K-means Processing
     Net_model = NN_Net(params, x_train)
     scores = Net_model.train(x_train, y_train, x_test, y_test, 'wsPower2', load_models=False)
 ```
+
+### Reference
+1.	[Mangalova E, Agafonov E. Wind power forecasting using the k-nearest neighbors algorithm. INT J FORECASTING. 2014;30:402-406](https://www.sciencedirect.com/science/article/abs/pii/S0169207013000848).
+2.	[Silva L. A feature engineering approach to wind power forecasting: GEFCom 2012. INT J FORECASTING. 2014;30:395-401]((https://www.sciencedirect.com/science/article/abs/pii/S0169207013000836)).
+3.	[Fang S, Chiang H. A high-accuracy wind power forecasting model. IEEE T POWER SYST. 2016;32:1589-1590](https://ieeexplore.ieee.org/abstract/document/7497013).
+4.	[Wytock M, Kolter JZ, "Large-scale probabilistic forecasting in energy systems using sparse gaussian conditional random fields," in 52nd IEEE Conference on Decision and Control, (IEEE, 2013), pp. 1019-1024](https://ieeexplore.ieee.org/abstract/document/6760016/).
+5.	[Li G, Chiang H. Toward cost-oriented forecasting of wind power generation. IEEE T SMART GRID. 2016;9:2508-2517](https://ieeexplore.ieee.org/abstract/document/7579134/).
+6.	[Yan J, Zhang H, Liu Y, Han S, Li L, Lu Z. Forecasting the high penetration of wind power on multiple scales using multi-to-multi mapping. IEEE T POWER SYST. 2018;33:3276-3284](https://ieeexplore.ieee.org/abstract/document/8240639).
+7.	[Fang S, Chiang H. Improving supervised wind power forecasting models using extended numerical weather variables and unlabelled data. IET RENEW POWER GEN. 2016;10:1616-1624](https://ieeexplore.ieee.org/abstract/document/7812215).
+8.	[Lee D, Baldick R. Short-term wind power ensemble prediction based on Gaussian processes and neural networks. IEEE T SMART GRID. 2013;5:501-510](https://ieeexplore.ieee.org/abstract/document/6606922/).
+
+9.	[Landry M, Erlinger TP, Patschke D, Varrichio C. Probabilistic gradient boosting machines for GEFCom2014 wind forecasting. INT J FORECASTING. 2016;32:1061-1066.]()
