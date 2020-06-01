@@ -33,7 +33,7 @@ Note that to be consistent, only the meteorological forecasts for that period th
 state of the Art work 
 
 Methods | 48H ahead 
-:-: | :-: | :-: | :-: | :-:
+:-: | :-: 
 ALL-CF | 0.14564 | 
 GBM + K-Means + LR | 0.14567 |
 KNN | 0.1472 |
