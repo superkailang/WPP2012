@@ -681,7 +681,7 @@ if __name__ == '__main__':
         'epoch_number': 1,
         'seq_interval': 1,
         'batch_size': 4096,
-        'save_dir': 'WIND',  # 保存文件目录;
+        'save_dir': 'WIND',  # ;
         'objective': 'regression',  # catagory,regression, category,binary_catagory
         'add_new_feature': False,
         'add_binary': False,
@@ -734,4 +734,4 @@ if __name__ == '__main__':
     params['layer'][0]['input_dim'] = x_train.shape[-1]
     Net_model = NN_Net(params, x_train)
     scores = Net_model.train(x_train, y_train, x_test, y_test, 'wsPower2', load_models=False)
-    print("预测误差： ", scores[-1])
+    print("RMSE Error： ", scores[-1])
