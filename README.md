@@ -8,6 +8,59 @@ The current global energy structure is transforming from traditional fossil ener
 Accurate wind energy forecasting is essential for smart grid operation. This projects studies machine learning algorithms for short-term wind power generation prediction. 
 
 
-### DataSet Describtion
+### DataSet Description
 
-At
+
+The [dataSet](https://github.com/superkailang/WPP2012/tree/master/Data) comes from Global Energy Forcasting Competition 2012 ([GEFCom2012](http://www.drhongtao.com/gefcom/2012))
+
+It's recomend to get the description from [Kaggle Platform](https://www.kaggle.com/c/GEF2012-wind-forecasting/overview)
+
+This is a wind power forecasting problem to predicting hourly power generation up to 48 hours ahead at 7 wind farms.
+
+The period between 2009/7/1 and 2010/12/31 is a model identification and training period, while the remainder of the dataset, that is, from 2011/1/1 to 2012/6/28, is there for the evaluation. 
+
+Note that to be consistent, only the meteorological forecasts for that period that would actually be available in practice are given. These two periods then repeats every 7 days until the end of the dataset. Inbetween periods with missing data, power observations are available for updating the models.
+
+- "train.csv" contains the training data:
+- the first column ("date") is a timestamp giving date and time of the hourly wind power measurements in following columns. For instance "2009070812" is for the 8th of July 2009 at 12:00;
+
+- the following 4 columns ("u", "v", "ws" and "wd") are the weather forecasts variables,
+
+- the file "benchmark.csv"  provides the forcast results 
+
+### Recent Work
+
+state of the Art work 
+name | 价格 |  数量  
+
+name | 111 | 222 | 333 | 444
+:-: | :-: | :-: | :-: | :-:
+aaa | bbb | ccc | ddd | eee| 
+fff | ggg| hhh | iii | 000|
+
+### Project Description
+
+```python
+
+```
+
+There are majoly two part in our work.
+
+- LightGBM used for regression analysis
+
+This part is full described in the model section
+
+```python
+
+```
+
+- LSTM regression
+
+
+#### Hyprid LSTM Model for Wind Power Prediction
+After K-means Processing 
+
+```python
+    Net_model = NN_Net(params, x_train)
+    scores = Net_model.train(x_train, y_train, x_test, y_test, 'wsPower2', load_models=False)
+```
