@@ -31,12 +31,18 @@ Note that to be consistent, only the meteorological forecasts for that period th
 ### Recent Work
 
 state of the Art work 
-name | 价格 |  数量  
 
-name | 111 | 222 | 333 | 444
+Methods | 48H ahead 
 :-: | :-: | :-: | :-: | :-:
-aaa | bbb | ccc | ddd | eee| 
-fff | ggg| hhh | iii | 000|
+ALL-CF | 0.14564 | 
+GBM + K-Means + LR | 0.14567 |
+KNN | 0.1472 |
+SGCRF | 0.1488 |
+LSBRT | 0.1518 | 
+SDAE-m-m | 0.154 | 
+S-GP-ENV  | 0.1604| 
+GP + NN | 0.1752 |
+Persistence | 0.361 | 
 
 ### Project Description
 
